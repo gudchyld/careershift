@@ -1,17 +1,17 @@
 import Head from 'next/head'
 
-const Services = () => {
+const Team = () => {
+    return (
 
-    return ( 
         <>
         <Head>
           <title>CareerShiftng | Services</title>
         </Head>
-        <div>
-            This is the service page
+        <div className="team">
+            This is the team page
         </div>
         </>
-     );
+      );
 }
  
-export default Services;
+export default Team;

@@ -1,27 +1,61 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+nav{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #06283D;
+  color: #ffffff;
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+
+nav .logo {
+  margin-right: auto;
+}
+
+
+.nav-link{
+  text-decoration: none;
+  margin-left: 2em;
+  color: #ffffff;
+}
+
+
+.footer{
+  background-color: #06283D;
+  padding: 10px 20px;
+}
+
+.home{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.card{
+  width: 15em;
+  height: 15em;
+  box-shadow:  0 4px 8px 3px rgba(173, 169, 169, 0.2);
+  text-align: center;
+}
+
+.card-title{
+  background-color: #256D85;
+  padding: 0.82em;
+}
+
+
+@media(min-width: 768px){
+   .cards{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+   }
+}
