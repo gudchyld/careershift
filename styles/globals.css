@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Source+Sans+Pro&display=swap');
+
 body{
   margin: 0;
   padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 
@@ -11,7 +14,7 @@ nav{
   align-items: center;
   border-bottom: 1px solid #ddd;
   background-color: #06283D;
-  color: #ffffff;
+  color: #DCDCDC;
 }
 
 
@@ -23,39 +26,203 @@ nav .logo {
 .nav-link{
   text-decoration: none;
   margin-left: 2em;
-  color: #ffffff;
+  color: #DCDCDC;
 }
 
-
-.footer{
-  background-color: #06283D;
-  padding: 10px 20px;
-}
-
+/* HOME */
 .home{
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   text-align: center;
+}
+
+
+.title{
+  color: #256D85;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.cards{
+  padding: 0 3em 4em;
 }
 
 .card{
   width: 15em;
-  height: 15em;
+  height: 20em;
+  box-sizing: border-box;
   box-shadow:  0 4px 8px 3px rgba(173, 169, 169, 0.2);
   text-align: center;
 }
 
 .card-title{
   background-color: #256D85;
-  padding: 0.82em;
+  padding: 0.52em;
+  color: #fff;
 }
 
+.card-detail{
+  font-size: 0.74rem;
+}
+
+.price{
+ color: #256D85;
+ font-size: 1rem;
+}
+
+
+.reviews{
+  width: 100%;
+  text-align: center;
+  background-color:#47B5FF;
+
+}
+
+.review-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 1.2em 2.4em;
+
+}
+
+.review{
+  background-color: #DFF6FF;
+  color: #504141;
+  max-width: 400px;
+  align-self: center;
+  padding: 0.68em;
+  border-radius: 8px;
+}
+
+.review-title{
+  color: #DFF6FF;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #06283D;
+  padding: 10px 20px;
+}
+
+footer .logo{
+  text-align: center;
+  color: #DCDCDC;
+}
+
+
+.icon{
+  color: #f6f4fa;
+  margin-left: 0.3em;
+  font-size: 1.875rem;
+}
+
+
+/* ABOUT */
+.about-image,.service-image{
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin: 0;
+  object-fit: cover;
+}
+
+.about{
+  text-align: center;
+}
+
+.about h2, h4{
+  color: #B56D32;
+  letter-spacing: 0.115em;
+}
+
+.about h4{
+  margin-top: 0;
+  
+}
+
+.about-content{
+  /* max-width: 450px; */
+  padding: 1em 3em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.founder-det{
+  border: 1px solid gray;
+  padding: 2em;
+}
+
+
+
+/* SERVICES */
+
+.service{
+  text-align: center;
+}
+
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  gap: 1em;
+  padding: 0 5em 2em;
+}
+
+.service-content h2{
+  color: #4F5352;
+}
+
+.service-det{
+  background-color: #E67E22;
+  width: 12em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1.3em;
+  color: #f5e4d6;
+}
+
+
+.service-det h4{
+  /* color: #2f3233; */
+  color: #4d341f;
+}
 
 @media(min-width: 768px){
    .cards{
     display: flex;
     flex-direction: row;
     gap: 2em;
+    
+   }
+
+   .about-content{
+    max-width: 700px;
+   }
+
+   .services{
+    flex-direction: row;
+    gap: 0.2em;
+   }
+
+   .service-det{
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    height: 25em;
+    padding: 0 1em 0.75em;
    }
 }
