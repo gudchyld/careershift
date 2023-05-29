@@ -21,25 +21,29 @@
 
 .navBtn {
   display: none;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  background: none;
 }
 
 /* For Navbar */
 @media (max-width: 768px) {
   .navLinkHolder {
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 32px; */
     position: fixed;
+    gap: 2.5rem;
     top: -100vh;
     /* top:0; */
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #06283d;
-
-    /* transition: 1s; */
+    background-color: #06283d;    
+    transition: 1s;
+    z-index: 1;
   }
 
   .navLink {
@@ -48,7 +52,11 @@
     font-size: 1.5rem;
   }
 
-  .nav-btn-close {
+  .navBtn {
+    display: block;
+  }
+
+  .navBtnClose {
     display: block;
     background: transparent;
     color: white;
@@ -56,5 +64,8 @@
     font-size: 3rem;
     position: absolute;
     bottom: 3rem;
+  }
+  .show {
+    transform: translateY(100vh);
   }
 }
