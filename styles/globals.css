@@ -24,35 +24,40 @@ body {
 
 .cards {
   padding: 0 3em 4em;
+  gap: 2em;
 }
 
 .card {
-  width: 15em;
+  width: 12em;
   height: 20em;
   box-sizing: border-box;
   box-shadow: 0 4px 8px 3px rgba(173, 169, 169, 0.2);
   text-align: center;
+  margin-top: 1em;
 }
 
 .card-title {
   background-color: #256d85;
-  padding: 0.52em;
+  padding: 0.62em;
+  margin: 0;
   color: #fff;
 }
 
 .card-detail {
-  font-size: 0.74rem;
+  font-size: 0.94rem;
 }
 
 .price {
   color: #256d85;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .reviews {
   width: 100%;
   text-align: center;
   background-color: #47b5ff;
+  padding: 5em 0;
 }
 
 .review-section {
@@ -66,9 +71,9 @@ body {
 .review {
   background-color: #dff6ff;
   color: #504141;
-  max-width: 400px;
+  max-width: 350px;
   align-self: center;
-  padding: 0.68em;
+  padding: 0.78em;
   border-radius: 8px;
 }
 
@@ -82,7 +87,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #06283d;
-  padding: 10px 20px;
+  padding: 25px 20px;
 }
 
 footer .logo {
@@ -121,7 +126,6 @@ h4 {
 }
 
 .about-content {
-  /* max-width: 450px; */
   padding: 1em 3em;
   display: flex;
   justify-content: center;
@@ -141,6 +145,7 @@ h4 {
   text-align: center;
 }
 
+
 .services {
   display: flex;
   justify-content: center;
@@ -148,12 +153,19 @@ h4 {
   flex-direction: column;
   margin: auto;
   gap: 1em;
-  padding: 0 5em 2em;
+  padding: 0 5em 3em;
+  margin-top: 3em;
 }
+
+.service-content{
+  padding: 5em 0;
+}
+
 
 .service-content h2 {
   color: #4f5352;
 }
+
 
 .service-det {
   background-color: #e67e22;
@@ -167,16 +179,21 @@ h4 {
   color: #f5e4d6;
 }
 
+
 .service-det h4 {
-  /* color: #2f3233; */
   color: #4d341f;
 }
+
+
+.light{
+  opacity: 0.9;
+}
+
 
 @media (min-width: 768px) {
   .cards {
     display: flex;
     flex-direction: row;
-    gap: 2em;
     flex-wrap: wrap;
     justify-content: center;
   }
