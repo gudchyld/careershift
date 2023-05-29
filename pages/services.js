@@ -16,7 +16,7 @@ const Services = () => {
           <div className="service-content">
              <h2>OUR SERVICES</h2>
              <div className="services">
-               <div className="service-det">
+               <div className="service-det light">
                   <Image src="/recruit.png" width={70} height={70}/>
                   <h4>RECRUITMENT SERVICES</h4>
                   <p>
@@ -37,7 +37,7 @@ const Services = () => {
                     Resume Wrting & Revamp<br></br>
                   </p>
                </div>
-               <div className="service-det">
+               <div className="service-det light">
                   <Image src="/business.png" width={70} height={70}/>
                   <h4>BUSINESS TECHNICAL CONSULTING</h4>
                   <p>
