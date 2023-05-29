@@ -1,0 +1,71 @@
+/* Navbar */
+.navHolder {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  background-color: #06283d;
+  color: #dcdcdc;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.navLink {
+  text-decoration: none;
+  margin-left: 2em;
+  color: #dcdcdc;
+}
+
+.navBtn {
+  display: none;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  background: none;
+}
+
+/* For Navbar */
+@media (max-width: 768px) {
+  .navLinkHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    gap: 2.5rem;
+    top: -100vh;
+    /* top:0; */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #06283d;    
+    transition: 1s;
+    z-index: 1;
+  }
+
+  .navLink {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.5rem;
+  }
+
+  .navBtn {
+    display: block;
+  }
+
+  .navBtnClose {
+    display: block;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 3rem;
+  }
+  .show {
+    transform: translateY(100vh);
+  }
+}
