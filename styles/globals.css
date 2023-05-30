@@ -38,6 +38,7 @@ body {
 
 .card-title {
   background-color: #256d85;
+  font-weight: 500;
   padding: 0.62em;
   margin: 0;
   color: #fff;
@@ -87,7 +88,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #06283d;
-  padding: 25px 20px;
+  padding: 1.57em 1.25em;
 }
 
 footer .logo {
@@ -103,7 +104,8 @@ footer .logo {
 
 /* ABOUT */
 .about-image,
-.service-image {
+.service-image,
+.contact-image {
   width: 100%;
   height: 300px;
   position: relative;
@@ -189,6 +191,89 @@ h4 {
   opacity: 0.9;
 }
 
+/* CONTACTS */
+
+.contacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.contactForm{
+  padding: 40px;
+}
+
+.contactForm h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.46em;
+  color: #B56D32;
+  letter-spacing: 0.2em;
+}
+
+.contactForm h2,p{
+  text-align: center;
+}
+
+ form{
+  margin-top: 2em;
+ }
+
+.contactForm .inputBox{
+  position: relative;
+  width:100%;
+  margin-top: 0.98em;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.3125em 0;
+  margin: 0.625em 0;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 0.3125em 0;
+  margin: 0.625em 0;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+  letter-spacing: 0.3em;
+  font-family: inherit;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+   font-size: 0.75rem;
+   transform: translateY(-20px);
+}
+
+
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100%;
+  background:#b56d32;
+  color: #f5e4d6;
+  cursor: pointer;
+  border: none;
+  padding: 0.625em;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
 
 @media (min-width: 768px) {
   .cards {
@@ -215,6 +300,10 @@ h4 {
     text-align: right;
     height: 25em;
     padding: 0 1em 0.75em;
+  }
+
+  .contactForm{
+    width: 45%;
   }
 }
 
