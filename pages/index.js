@@ -6,6 +6,17 @@ import workingLady from "../public/serious-worker.png";
 import Link from 'next/link'
 
 export default function Home() {
+
+  // function handleLeftScroll() {
+  //   const left = document.querySelector(".review");
+  //   left.scrollBy(200, 0);
+  // }
+
+  // function handleRightScroll() {
+  //   const right = document.querySelector(".review");
+  //   right.scrollBy(-200, 0);
+  // }
+
   return (
     <>
       <Head>
@@ -113,26 +124,25 @@ export default function Home() {
         <section className="reviews">
           <p className="review-title">What our customers are saying..</p>
           <div className="review-section">
-            <div className="review">
-              <p>
-                I contracted careershiftng for a CV revamp and a cover letter
-                set-up and the results I got were mind blowing even to me at
-                first and I have gotten several interviews just from the work
-                they did.
-              </p>
-              <p>Josh | Financial Accountant</p>
-            </div>
 
-            <div className="review">
-              <p>
-                I contracted careershiftng for a CV revamp and a cover letter
-                set-up and the results I got were mind blowing even to me at
-                first and I have gotten several interviews just from the work
-                they did.
-              </p>
-              <p>Valerie | Web Developer</p>
-            </div>
-          </div>
+          
+          {/* <button className="left" onclick={handleLeftScroll}><Image src="/left-arrow.png"  width={30} height={30}/></button> */}
+          
+              <div className="review">
+                <p>I contracted careershiftng for a CV revamp and a cover letter set-up and the results 
+                  I got were mind blowing even to me at first and I have gotten several interviews just from the work they did.</p>
+                <p>Josh | Financial Accountant</p>
+              </div>
+
+              <div className="review">
+                <p>I contracted careershiftng for a CV revamp and a cover letter set-up and the results I got were mind blowing even to me at first 
+                  and I have gotten several interviews just from the work they did.</p>
+                <p>Valerie | Web Developer</p>
+              </div>
+              </div>
+              {/* <button className="right" onclick={handleRightScroll}><Image src="/right-arrow.png" width={30} height={30}/></button> */}
+            
+
         </section>
       </main>
     </>
