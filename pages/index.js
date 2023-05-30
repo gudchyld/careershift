@@ -2,8 +2,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import workingLady from "../public/serious-worker.jpg";
-// import Link from 'next/link'
+import workingLady from "../public/serious-worker.png";
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -17,7 +17,11 @@ export default function Home() {
           <div className="hero-container">
           <div className="hero-item hero-one">
             <h2 className="hero-title">CAREERSHIFTng</h2>
-            <p className="hero-text">Let's help you buiding the career you desire</p>
+            <p className="hero-text">Let's help you build the career you desire</p>
+            <div className="hero-button-container">
+              <Link className="hero-button bt1" href={`/services`}>Our Services</Link>
+              <Link className="hero-button bt2" href={`/contacts`}>Contact Us</Link>
+            </div>
           </div>
           <div className="hero-item hero-two">
             <Image src={workingLady} fill style={{objectFit: 'contain'}}/>
