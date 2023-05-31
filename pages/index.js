@@ -28,14 +28,14 @@ export default function Home() {
           <div className="hero-container">
           <div className="hero-item hero-one">
             <h2 className="hero-title">CAREERSHIFTng</h2>
-            <p className="hero-text">Let's help you build the career you desire</p>
+            <p className="hero-text">Lets help you build the career you desire</p>
             <div className="hero-button-container">
               <Link className="hero-button bt1" href={`/services`}>Our Services</Link>
               <Link className="hero-button bt2" href={`/contacts`}>Contact Us</Link>
             </div>
           </div>
           <div className="hero-item hero-two">
-            <Image src={workingLady} fill style={{objectFit: 'contain'}}/>
+            <Image src={workingLady} fill style={{objectFit: 'contain'}} alt="working-lady"/>
           </div>
           </div>
         </section>

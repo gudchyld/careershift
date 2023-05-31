@@ -11,7 +11,7 @@ const About = () => {
         </Head>
         <section className="about">
           <div className="about-image">
-             <Image src='/about.png' layout="fill"/>
+             <Image src='/about.png' layout="fill" alt='about-tom-image'/>
           </div>
           <div className="about-content">
           <h2>Yes, you found us</h2>

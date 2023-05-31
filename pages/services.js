@@ -11,13 +11,13 @@ const Services = () => {
         </Head>
         <section className="service">
           <div className="service-image">
-             <Image src='/services.png' layout='fill'/>
+             <Image src='/services.png'alt='services-image-top' layout='fill'/>
           </div>
           <div className="service-content">
              <h2>OUR SERVICES</h2>
              <div className="services">
                <div className="service-det light">
-                  <Image src="/recruit.png" width={70} height={70}/>
+                  <Image src="/recruit.png" width={70} height={70} alt='image-recruit' />
                   <h4>RECRUITMENT SERVICES</h4>
                   <p>
                     360 Recruitment Services<br></br>
@@ -26,7 +26,7 @@ const Services = () => {
                   </p>
                </div>
                <div className="service-det">
-                  <Image src="/write.png" width={70} height={70}/>
+                  <Image src="/write.png" width={70} height={70} alt='image-writer'/>
                   <h4>TECHNICAL WRITING</h4>
                   <p>
                     Cover Letters<br></br>
@@ -38,7 +38,7 @@ const Services = () => {
                   </p>
                </div>
                <div className="service-det light">
-                  <Image src="/business.png" width={70} height={70}/>
+                  <Image src="/business.png" width={70} height={70} alt='image-business'/>
                   <h4>BUSINESS TECHNICAL CONSULTING</h4>
                   <p>
                     Business Advisory<br></br>
@@ -50,7 +50,7 @@ const Services = () => {
                   </p>
                </div>
                <div className="service-det">
-                  <Image src="/career.png" width={70} height={70}/>
+                  <Image src="/career.png" width={70} height={70} alt='image-career'/>
                   <h4>CAREER COACHING</h4>
                   <p>
                     Interview Guides<br></br>

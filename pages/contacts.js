@@ -11,7 +11,7 @@ const Contacts = () => {
 
         <section className="contacts">
           <div className="contact-image">
-              <Image src='/contact.png' layout="fill"/>
+              <Image src='/contact.png' layout="fill" alt='contact-image'/>
             </div>
             <div className="contactForm">
               <h2>CONTACT US</h2>

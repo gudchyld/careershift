@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Footer = () => {
     return ( 
         <footer className="footer">
-            <Image src='/footer.png' width={128} height={77}/>
+            <Image src='/footer.png' width={128} height={77} alt='image-footer'/>
             <h1 className="logo">CAREERSHIFTng</h1>
             
             <div className="footer-icons">
