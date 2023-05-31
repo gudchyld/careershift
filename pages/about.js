@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Head from 'next/head'
 import Image from 'next/image'
+import founder from '../public/ifeoma, founder 2.png'
 
 const About = () => {
     return (  
@@ -23,7 +24,9 @@ const About = () => {
              and business partners who have stood the test of time in building successful careers and businesses in Nigeria and across continents.
           </p>
           <h2>Our Founder</h2>
-           <Image src="/founder.png" width={300} height={380}/>
+           <Image src={founder} width={300} height={420}
+           alt="ifeoma, founder"
+           />
            <h3>ELENDU LILIAN</h3>
            <h4 className="subtitle">FOUNDER,  BUSINESS CONSULTING AND  HUMAN RESOURCES</h4>
           <p className="founder-det">Lilian is an experienced chartered accountant with giant strides in tax, ICT and telecommunication sector. She started her career as a lead consultant for finance and human resources to becoming an assistant manager with a government agency.
