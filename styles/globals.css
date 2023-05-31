@@ -90,7 +90,7 @@ body {
 
 .card {
   width: 16em;
-  height: 20em;
+  height: 24em;
   box-sizing: border-box;
   box-shadow: 0 4px 8px 3px rgba(173, 169, 169, 0.2);
   text-align: center;
@@ -99,8 +99,8 @@ body {
 
 .card-title {
   background-color: #256d85;
-  font-weight: 500;
-  padding: 0.62em;
+  font-weight: 800;
+  padding:1.5em;
   margin: 0;
   color: #fff;
 }
@@ -113,6 +113,7 @@ body {
   color: #256d85;
   font-size: 1.3rem;
   font-weight: 700;
+  margin-top: 40px;
 }
 
 .reviews {
@@ -363,7 +364,10 @@ form {
     justify-content: center;
     gap: 10px;
   }
- 
+ .card{
+  width: 18em;
+  height: 30em;
+ }
 
   .review {
     display: flex;
