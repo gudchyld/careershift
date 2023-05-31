@@ -158,12 +158,32 @@ body {
 footer .logo {
   text-align: center;
   color: #dcdcdc;
+  /* font-size: 1.2rem; */
 }
 
 .icon {
   color: #f6f4fa;
   margin-left: 0.3em;
   font-size: 1.875rem;
+}
+
+.footer-message{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-message p,
+.icon-message{
+  color: #f6f4fa;
+}
+
+.m-align{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 /* ABOUT */
