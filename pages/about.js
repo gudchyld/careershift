@@ -11,7 +11,11 @@ const About = () => {
         </Head>
         <section className="about">
           <div className="about-image">
-             <Image src='/about.png' layout="fill" alt='about-tom-image'/>
+             <Image src='/about2.jpg' layout="fill" alt='about-tom-image'
+             style={{
+              objectFit:"cover",
+             }}
+             />
           </div>
           <div className="about-content">
           <h2>Yes, you found us</h2>

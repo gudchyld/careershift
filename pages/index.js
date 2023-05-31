@@ -135,9 +135,8 @@ export default function Home() {
               </div>
 
               <div className="review">
-                <p>I contracted careershiftng for a CV revamp and a cover letter set-up and the results I got were mind blowing even to me at first 
-                  and I have gotten several interviews just from the work they did.</p>
-                <p>Valerie | Web Developer</p>
+                <p>My company contracted careershiftng for business and tax advisory services, the solutions provided were outstanding and the company was saved over a million naira in tax cost..</p>
+                <p>Jehoshaphat | CEO Gadutech</p>
               </div>
               </div>
               {/* <button className="right" onclick={handleRightScroll}><Image src="/right-arrow.png" width={30} height={30}/></button> */}

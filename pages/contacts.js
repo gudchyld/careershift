@@ -11,7 +11,11 @@ const Contacts = () => {
 
         <section className="contacts">
           <div className="contact-image">
-              <Image src='/contact.png' layout="fill" alt='contact-image'/>
+              <Image src='/contact.png' layout="fill" alt='contact-image'
+              style={{
+                objectFit:"cover",                
+              }}
+              />
             </div>
             <div className="contactForm">
               <h2>CONTACT US</h2>
