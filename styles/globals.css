@@ -127,6 +127,7 @@ body {
 
 .review-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2em;
@@ -379,9 +380,7 @@ h4 {
     width: 80vh;
     height: 70vh;
     padding-bottom: 50px;
-    margin-bottom: 30px;
-       
-    
+    margin-bottom: 30px;  
     
   }
 
