@@ -70,12 +70,13 @@ body {
 }
 .hero-button {
   text-decoration: none;
-  background-color: #f47169;
+  background-color: #E67E22;
   color: white;
   padding: 8px 20px;
   border-radius: 20px;
   font-size: 0.9rem;
   font-weight: bold;
+  opacity: 80%;
 }
 
 .title {
