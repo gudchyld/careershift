@@ -32,6 +32,7 @@ body {
   width: 70vw;
   align-items: center;
   justify-content: center;
+  gap: 15px;
 }
 .hero-title {
   color: #256d85;
@@ -100,7 +101,7 @@ body {
 .card-title {
   background-color: #256d85;
   font-weight: 800;
-  padding:1.5em;
+  padding: 1.5em;
   margin: 0;
   color: #fff;
 }
@@ -167,7 +168,7 @@ footer .logo {
   font-size: 1.875rem;
 }
 
-.footer-message{
+.footer-message {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -176,11 +177,11 @@ footer .logo {
 }
 
 .footer-message p,
-.icon-message{
+.icon-message {
   color: #f6f4fa;
 }
 
-.m-align{
+.m-align {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -226,9 +227,15 @@ h4 {
   margin-top: 4rem;
 }
 
-.founder-det {
+.founder-details {
   border: 1px solid gray;
   padding: 2em;
+}
+
+.about-founder-image{
+  width: 400px;
+  height: 500px;
+  position: relative;
 }
 
 /* SERVICES */
@@ -384,10 +391,10 @@ form {
     justify-content: center;
     gap: 10px;
   }
- .card{
-  width: 18em;
-  height: 30em;
- }
+  .card {
+    width: 18em;
+    height: 30em;
+  }
 
   .review {
     display: flex;

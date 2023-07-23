@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Head from "next/head";
 import Image from "next/image";
-import styles from "@/styles/Home.module.css";
-import workingLady from "../public/serious-worker.png";
-import Link from 'next/link'
+// import styles from "@/styles/Home.module.css";
+
+import careerImage from "../public/Career-image-collage-up3.png";
+import Link from "next/link";
 
 export default function Home() {
-
   // function handleLeftScroll() {
   //   const left = document.querySelector(".review");
   //   left.scrollBy(200, 0);
@@ -26,17 +26,28 @@ export default function Home() {
         {/* Hero goes here */}
         <section className="hero-holder">
           <div className="hero-container">
-          <div className="hero-item hero-one">
-            <h2 className="hero-title">CAREERSHIFTng</h2>
-            <p className="hero-text">Lets help you build the career you desire</p>
-            <div className="hero-button-container">
-              <Link className="hero-button bt1" href={`/services`}>Our Services</Link>
-              <Link className="hero-button bt2" href={`/contacts`}>Contact Us</Link>
+            <div className="hero-item hero-one">
+              <h2 className="hero-title">CAREERSHIFTng</h2>
+              <p className="hero-text">
+                Lets help you build the career you deserve
+              </p>
+              <div className="hero-button-container">
+                <Link className="hero-button bt1" href={`/services`}>
+                  Our Services
+                </Link>
+                <Link className="hero-button bt2" href={`/contacts`}>
+                  Contact Us
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="hero-item hero-two">
-            <Image src={workingLady} fill style={{objectFit: 'contain'}} alt="working-lady"/>
-          </div>
+            <div className="hero-item hero-two">
+              <Image
+                src={careerImage}
+                fill
+                style={{ objectFit: "contain" }}
+                alt="working-lady"
+              />
+            </div>
           </div>
         </section>
 
@@ -124,24 +135,28 @@ export default function Home() {
         <section className="reviews">
           <p className="review-title">What our customers are saying..</p>
           <div className="review-section">
+            {/* <button className="left" onclick={handleLeftScroll}><Image src="/left-arrow.png"  width={30} height={30}/></button> */}
 
-          
-          {/* <button className="left" onclick={handleLeftScroll}><Image src="/left-arrow.png"  width={30} height={30}/></button> */}
-          
-              <div className="review">
-                <p>I contracted careershiftng for a CV revamp and a cover letter set-up and the results 
-                  I got were mind blowing even to me at first and I have gotten several interviews just from the work they did.</p>
-                <p>Josh | Financial Accountant</p>
-              </div>
+            <div className="review">
+              <p>
+                I contracted careershiftng for a CV revamp and a cover letter
+                set-up and the results I got were mind blowing even to me at
+                first and I have gotten several interviews just from the work
+                they did.
+              </p>
+              <p>Josh | Financial Accountant</p>
+            </div>
 
-              <div className="review">
-                <p>My company contracted careershiftng for business and tax advisory services, the solutions provided were outstanding and the company was saved over a million naira in tax cost..</p>
-                <p>Jehoshaphat | CEO Gadutech</p>
-              </div>
-              </div>
-              {/* <button className="right" onclick={handleRightScroll}><Image src="/right-arrow.png" width={30} height={30}/></button> */}
-            
-
+            <div className="review">
+              <p>
+                My company contracted careershiftng for business and tax
+                advisory services, the solutions provided were outstanding and
+                the company was saved over a million naira in tax cost..
+              </p>
+              <p>Jehoshaphat | CEO Gadutech</p>
+            </div>
+          </div>
+          {/* <button className="right" onclick={handleRightScroll}><Image src="/right-arrow.png" width={30} height={30}/></button> */}
         </section>
       </main>
     </>

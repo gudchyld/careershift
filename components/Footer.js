@@ -15,7 +15,7 @@ const Footer = () => {
             
             <div className="footer-icons">
                 <Link href="/"><FaTwitterSquare className="icon"/></Link>
-                <Link href="/"><FaInstagramSquare className="icon"/></Link>
+                <Link href="https://instagram.com/careershiftng" target='_blank'><FaInstagramSquare className="icon"/></Link>
                 <Link href="/"><FaLinkedin className="icon"/></Link>
                 <Link href="/"><FaFacebookSquare className="icon"/></Link>
             </div>
