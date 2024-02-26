@@ -29,7 +29,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  /* margin-bottom: 1rem; */
 }
 
 .hero-container {
@@ -275,11 +275,15 @@ h4 {
 }
 
 .service-content {
-  padding: 2em 0;
+  /* padding: 1em 0; */
 }
 
 .service-content h2 {
   color: #4f5352;
+  
+}
+
+.home .service-content h2{
   
 }
 
@@ -431,6 +435,11 @@ form {
     justify-content: center;
   }
 
+  .service-content{
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+
   .service-det {
     justify-content: flex-end;
     align-items: flex-end;
@@ -470,4 +479,6 @@ form {
   .hero-two {
     flex: 1;
   }
+
+  
 }

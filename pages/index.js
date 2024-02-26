@@ -60,7 +60,7 @@ export default function Home() {
 
         {/* Services Begin here */}
         <div className="service-content">
-          <h2>OUR SERVICES</h2>
+          <h2 className="home-service">OUR SERVICES</h2>
           <div className="services">
             <div className="service-det light">
               <Image
