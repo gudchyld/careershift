@@ -27,6 +27,7 @@ export default function Home() {
     <>
       <Head>
         <title>CareerShiftng | Home</title>
+        <meta name="google-site-verification" content="Ydyh8fd4k0C67fxE22CxyVqX0OvGBndbl7qeZ5Iau6Q" />
       </Head>
       <main className="home">
         {/* Hero goes here */}
