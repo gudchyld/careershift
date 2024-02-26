@@ -1,10 +1,16 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Head from "next/head";
 import Image from "next/image";
+import {Roboto} from "next/font/google";
 // import styles from "@/styles/Home.module.css";
 
 import careerImage from "../public/Career-image-collage-up3.png";
 import Link from "next/link";
+
+// const roboto_init = Roboto({
+//   subsets:["latin"],
+//   weight:["100","300", "500","700"]
+// })
 
 export default function Home() {
   // function handleLeftScroll() {
@@ -21,15 +27,16 @@ export default function Home() {
     <>
       <Head>
         <title>CareerShiftng | Home</title>
+        <meta name="google-site-verification" content="Ydyh8fd4k0C67fxE22CxyVqX0OvGBndbl7qeZ5Iau6Q" />
       </Head>
       <main className="home">
         {/* Hero goes here */}
         <section className="hero-holder">
           <div className="hero-container">
             <div className="hero-item hero-one">
-              <h2 className="hero-title">CAREERSHIFTng</h2>
+              <h2 className={`poppins hero-title`}>CAREERSHIFTng</h2>
               <p className="hero-text">
-                Lets help you build the career you deserve
+                Lets help build the career you deserve
               </p>
               <div className="hero-button-container">
                 <Link className="hero-button bt1" href={`/services`}>
@@ -51,87 +58,78 @@ export default function Home() {
           </div>
         </section>
 
-        <h2 className="title">COMPETITIVE RESUME PACKAGES</h2>
-        <section className="cards">
-          <div className="card one">
-            <h4 className="card-title">BASIC</h4>
-            <p className="card-detail price">$22</p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              CV Revamp
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Cover Letter
-            </p>
+        {/* Services Begin here */}
+        <div className="service-content">
+          <h2 className="home-service">OUR SERVICES</h2>
+          <div className="services">
+            <div className="service-det light">
+              <Image
+                src="/recruit.png"
+                width={70}
+                height={70}
+                alt="image-recruit"
+              />
+              <h4>RECRUITMENT SERVICES</h4>
+              <p>
+                360 Recruitment Services<br></br>
+                Human Resource Mgt<br></br>
+                Job Posting + Advert Placement<br></br>
+              </p>
+            </div>
+            <div className="service-det">
+              <Image
+                src="/write.png"
+                width={70}
+                height={70}
+                alt="image-writer"
+              />
+              <h4>TECHNICAL WRITING</h4>
+              <p>
+                Cover Letters<br></br>
+                Personal Statements<br></br>
+                LinkedIn Optimization<br></br>
+                Content + Creative Writing<br></br>
+                Project + Assignment Review<br></br>
+                Resume Wrting & Revamp<br></br>
+              </p>
+            </div>
+            <div className="service-det light">
+              <Image
+                src="/business.png"
+                width={70}
+                height={70}
+                alt="image-business"
+              />
+              <h4>BUSINESS TECHNICAL CONSULTING</h4>
+              <p>
+                Business Advisory<br></br>
+                Financial + Tax Consulting<br></br>
+                Business Plans & Proposals<br></br>
+                Business Promotions + Marketing<br></br>
+                Website + Logo + Graphics<br></br>
+                Design
+              </p>
+            </div>
+            <div className="service-det">
+              <Image
+                src="/career.png"
+                width={70}
+                height={70}
+                alt="image-career"
+              />
+              <h4>CAREER COACHING</h4>
+              <p>
+                Interview Guides<br></br>
+                Career Mentorship<br></br>
+                Effective Networking<br></br>
+                Job Offer Negotiations
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div className="card two">
-            <h4 className="card-title">STANDARD</h4>
-            <p className="card-detail price">$35</p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              CV Revamp
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Cover Letter
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Linkedin Optimization
-            </p>
-          </div>
-          <div className="card three">
-            <h4 className="card-title">GOLD</h4>
-            <p className="card-detail price">$48</p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              CV Revamp
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Cover Letter
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Interview Session
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Linkedin Optimization
-            </p>
-          </div>
-          <div className="card four">
-            <h4 className="card-title">PREMIUM</h4>
-            <p className="card-detail price">$69</p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              CV Revamp
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Cover Letter
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Job Search
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Career Coaching
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Interview Session
-            </p>
-            <p className="card-detail">
-              <Image src="/check-mark.png" width={13} height={10} />
-              Linkedin Optimization
-            </p>
-          </div>
-        </section>
 
+        {/* Begin Reviews */}
         <section className="reviews">
           <p className="review-title">What our customers are saying..</p>
           <div className="review-section">
